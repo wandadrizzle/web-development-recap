@@ -1,0 +1,83 @@
+body {
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-height: 40vh;
+    margin:auto;
+}
+
+.row {
+    display: flex;
+}
+.special-contaier {
+    display: flex; /*Add this only to the parent*/
+    flex-direction: column; /*Note that the default is row*/
+}
+
+.box {
+    background-color: aqua;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.big-box {
+    background-color: deeppink;
+    flex-grow: 3; /*The width and height will be ignored on big screens because of this*/
+    flex-shrink: 2; /*A higher value means the item will shrink more.*/
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+button {
+    position: absolute;
+    left: 10px;
+    right: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*text-align: center;*/
+    position: fixed;
+    background-color: pink;
+   
+    height: 150px;
+    width: 100%;
+}
+
+.relative-element {
+    position: relative;
+    background-color:green;
+    left: 15px;
+    top: 30px;
+    height: 200px;
+    width: 200px;
+}
+
+.child {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    background-color: yellow;
+    
+    background-image: 
+    url('/assets/coffee.jpg');
+    background-size: contain; /*This make the image fit completely inside the container*/
+    background-repeat: repeat;
+    /*The background-position property can take pixels, percentages and words like top, left, right, bottom, center. */
+}

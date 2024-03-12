@@ -1,0 +1,89 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dotted {
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+    text-decoration-color: #2A9D8F;
+    text-transform: capitalize;
+}
+
+.dotted:hover {
+    font-weight: bold;
+    color: tomato;
+    text-decoration:none; 
+}
+
+a {
+    color: #52C80C;
+    font-family: 'Georgia', serif;
+    background-color: #D6E5E3;
+    text-decoration: none;
+}
+
+/*
+You can refer to the status of an element with pseudo selectors. NB: State!!!!
+a:link
+a:hover
+a:active - while links are clicked and the button not released
+*/
+table {
+    text-align: left;
+    border-collapse: collapse; /*Remove double borders*/
+    margin: 10px;
+}
+
+th, td {
+    border: 2px solid #0C1527; /*The only required border subproperty is border-style. */
+    padding: 5px;
+}
+
+tr {
+    background-color: plum;
+}
+/*
+tr:nth-child(2){
+    background-color:red;
+}
+*/
+tr:nth-child(even){
+    background-color:red;
+}
+
+ul {
+    list-style: square inside none; /*type position image*/
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    list-style-type: lower-roman;
+}
+
+p {
+    font-weight: normal;
+}
+
+input {
+    border:1px solid #FF9E03;
+}
+
+/*You can target various input elements using an attribute selector*/
+input[type="password"]{
+    border: 1px solid pink;
+    border-radius: 3px; /*top-left, top-right, bottom-right, and bottom-left*/
+    color:pink;
+    background-color: #17233B;
+}
+
+input[type="email"]:hover {
+    background-color: #0C1527;
+    color: green;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #FF9E03;
+}

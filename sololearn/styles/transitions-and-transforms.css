@@ -1,0 +1,59 @@
+.container {
+
+    width: 500px;
+    height: 500px;
+    background-color: yellowgreen;
+}
+
+div:active {
+    transform: translate(50px,25px); /*right-down (if using negative values then it'll be left and up)*/
+}
+
+.container-2 {
+    width: 300px;
+    height: 300px;
+    background-color: purple;
+    transition: width 4s, background-color 2s;
+    transition-delay: 2s;
+}
+
+.container-2:active {
+    transform: scale(1.5);
+    transform: rotate(15deg);
+    /*You can also add a transform-origin which can be "top left" or "right bottom" or ...*/
+    /*Combinations are a thing too transform: translate(100px, 150px) rotate(70deg) scale(1.5);*/
+}
+
+.container-2:hover {
+    width: 400px;
+    background-color: deeppink;
+}
+
+.container-3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: snakeMove;
+    animation-duration: 20s;
+    animation-timing-function: linear; /*OPTIONAL?*/
+    animation-delay: 2s; /*OPTIONAL?*/
+    animation-iteration-count: infinite;
+}
+/*Make sure to name your animations*/
+@keyframes snakeMove {
+    0% { background-color: #7B41EA;}
+    33% { background-color: #CCB4FB;}
+    66% { background-color: #C833FD;}
+    100% { background-color: #F91583;}
+}
+
+@keyframes colorChange {
+    from { background-color: #007BFF;}
+    to { background-color: #6610F2;}
+}
+
+@keyframes pulse {
+    0% { transform: scale(1);}
+    50% { transform: scale(2);}
+    100% { transform: scale(1);}
+  }

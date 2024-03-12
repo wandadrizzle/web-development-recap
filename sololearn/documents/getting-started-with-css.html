@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with CSS</title>
+    <style>
+        /*These styles are applied using selectors.
+          CSS controls all the design-related aspects of your web page. This includes fonts, sizes, colors, position, spacing, layout, animations, and much more.
+        */
+        h2, h3 {
+            color:chocolate;
+            text-align: center;
+        }
+        p {
+            color:turquoise
+        }
+        u {
+            color: plum
+        }
+        /*Below is a descendant selector...*/
+        p em {
+            color: seagreen
+        }
+        #special-container {
+            background-color: bisque;
+        }
+        div.things p{
+            color:seagreen;
+            font-size: 18px;
+        }
+        p.things{
+            color:seagreen;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: azure; background-color: blue;">Styling Techniques</h1>
+    <a href="#special-container">
+        <h2>Linking to another section of a webpage</h2>
+    </a>
+    <p style="color: orchid;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti cum asperiores cupiditate quidem, omnis totam earum velit similique consequatur amet? Odio saepe ratione consectetur illum molestiae minima earum tempore non.</p>
+    <h2>Testing Internal CSS</h2>
+    <p>Here's a random paragraph. Here you'll find that <em>styles</em> get <strong>inherited</strong> when there is nesting. <u>Unless</u> I set things in such a way that there is no inheritance.</p>
+    <img src="/assets/tired.jpeg" alt="A meme with a tired developer" style="display: block; margin: auto; border: 2px solid black;">
+    <div id="special-container">
+        <h3>Hashtag Hashtag</h3>
+    </div>
+    <div class="things">
+        <h3>Here are random lyrics I am thinking about right now.</h3>
+        <p>Say that you'll stay just a little</p>
+
+    </div>
+    <p class="things">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consequatur deleniti porro eum magnam ut repellendus laudantium repudiandae, et praesentium voluptates voluptatibus? Nisi eaque minus dolorum quam error! Consequatur, totam!</p>
+</body>
+</html>

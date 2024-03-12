@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/scripts/welcome-to-javascript.js" defer></script>
+    <link rel="stylesheet" href="/styles/welcome-to-javascript.css">
+    <title>JavaScript: 12 March 2024</title>
+</head>
+<body>
+    <script>
+        alert("Welcome to JavaScript!")
+        console.log("Hi, I just sent a message to the console.")
+    </script> <!--This statement will show when the browser loads, internal JS-->
+    <h1 id="h1">Othi sizame uJavaScript</h1>
+    <!--You can modify things using their IDs-->
+    <button onclick="alert('Hello'); h1.style.color = 'green'; document.getElementById('h1').textContent='I think JavaScript is going to be okay.';">Press Here</button>&nbsp;
+    <button id="test-button" onclick="document.getElementById('test-button').style.color='red'">Press Here</button>
+    <img src="/assets/coffee.jpg" alt="A barrister adding creamer to coffee." onclick="scaleImage()">
+    <img src="/assets/coffee.jpg" alt="A barrister adding creamer to coffee." onclick="changeWidth(500)">
+    <img src="/assets/coffee.jpg" alt="A barrister adding creamer to coffee." onclick='src="/assets/no-code-experience.jpeg"'>
+</body>
+</html>
+<!--EVENT=triggered action
+    The tree diagram that represents the structure of a page is known as the Document Object Model (DOM).
+    1. Access the element you want to modify
+-->
